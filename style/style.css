@@ -83,11 +83,11 @@ nav li a{
     position: absolute;
     display: inline-flex;
     border-radius: 8px;
-    padding: 16px;
+    padding: 10px;
     align-items: flex-start;
     gap: 24px;
     background: rgba(255, 255, 255, 0.30);
-    top: 70%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -106,27 +106,30 @@ nav li a{
     background: #FF5400;
 }
 /* Image style */
+
 .row{
-    height: 300px;
-    margin: 20px 200px;
+    width: 50%;
+    display: flex;
+    height: 100%;
+    margin: 20px 140px;
     
     
 }
+
 .row img{
-    height: 100%;
+    
     padding: 10px;
-    
-    
-    
+   
 }
 
 /* Populer styling */
 .features{ 
     display: flex;
-    margin-top: 130px;
-    gap: 140px;
+    align-items: center;
+    /* margin-top: 100px; */
+    gap: 100px;
     flex: 1;
-    margin: 20px 200px;
+    margin: 20px 140px;
 }
 .section-title{
     color: #131318;
@@ -139,15 +142,35 @@ nav li a{
     color: rgba(19, 19, 24, 0.70);
     font-size: 1rem;
     font-weight: 400;
-    line-height: 26px; /* 162.5% */
-}
-.feature-img{
-    margin: auto;
     
 }
+.feature-img{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+/* news-leter section */
+.newsletter-content{
+    width: 474px;
+    height: 422px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 20px;
+}
+.newsletter-content input{
+    width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    
+
+}
+
 /* Populer Styling Ends */
 
 /* Deals Styling */
+
 .deals-title{
     color: #131318;
     text-align: center;
@@ -170,21 +193,16 @@ nav li a{
 .deals-img img{
     width: 100%;
     height: 100%;
-    
-    
-    
 }
 /* Why choose us */
 .row-1{
     display: flex;
-    margin: 10px 200px;
+    margin: 10px 140px;
     gap: 30px;
-    
-    
 }
 .box-1{
-    width: 100%;
-    height: 284px;
+    /* width: 100%;
+    height: 284px; */
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
@@ -207,8 +225,8 @@ nav li a{
     margin: 20px 500px;   
 }
 .box-3{
-    width: 100%;
-    height: 284px;
+    /* width: 100%; */
+    /* height: 284px; */
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
@@ -225,15 +243,14 @@ nav li a{
 }
 /* Why choose us end */
 .card{
-    width: 579px;
-    height: 389px;
-    border-radius: 16px;
-    border: 2px solid #611717;
+    width: 50%;
+    height: 300px;
+    border-radius: 1px;
     background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(2.5px);
     position: absolute;
     z-index: 1;
-    transform: translate(120%, -130%);
+    transform: translate(80%, -120%);
     
 }
 
@@ -246,10 +263,9 @@ nav li a{
 }
 .card-text{
     color: #5A5A5D;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 26px;
-    margin: 50px;
+    margin-left: 50px;
 }
 .card-price{
     color: #FF5400;
@@ -257,35 +273,22 @@ nav li a{
     font-style: normal;
     font-weight: 800;
     margin-left: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     
 }
-#find-now{
-    color: #FFF;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 700;
-    border-radius: 8px;
-    background: #FF5400;
-    margin-left: 50px;
-    margin-bottom: 80px;
-    width: 144px;
-    height: 52px;
-}
+
 .find-now-button{
-    width: 144px;
+    width: auto;
     height: 52px;
-    padding: 20px 25px;
     color: #FFF;
     text-align: center;
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
     border-radius: 8px;
-    background: #FF5400;
-    
-    
+    background: #FF5400;   
 }
+
 /* footer Styling */
 footer{
     background: rgba(19, 19, 24, 0.05);
@@ -334,18 +337,23 @@ footer{
     header{
         padding: 20px;
    }
-   .nav, nav > ul, .banner, .banner-description, .features{
-    position: absolute;
+   .nav, .nav-title >ul, .banner, .banner-description, .features, .row-1, .deals-section{
+    
     flex-direction: column;
+    margin: 10px;
    }
+  
    .box-element{
-    display: flex;
     width: 287px;
     padding: 16px;
     flex-direction: column;
     align-items: center;
     gap: 16px;
    }
+   .card, .row-1, .row-2{
+    display: none;
+   }
+   
    .banner{
     margin: 2px;
     width: 335px;
@@ -361,10 +369,58 @@ footer{
    }
    .banner-description{
     font-size: .8rem;
-    position: absolute;
+    
     top: 25%;
     left: 45%;
     transform: translate(-50%, -50%);
    }
+   .row-1{
+    display: none;
+   }
+   .feature-img{
+    
+    width: 50%;
+    height: 50%;
+    
+}
    
 }
+
+@media screen and (min-width:576px) and (max-width:960px){
+    .nav > ul{
+        flex-direction: column;
+       }
+       .nav >ul{
+        display: none;
+       }
+       
+       .card, .row-1, .row-2{
+        display: none;
+       }
+       .banner{
+        margin: 2px;
+        width: 50%;
+        height: 50%;
+       }
+       .banner-text-title{
+        font-size: 1.25rem;
+        position: absolute;
+        flex-direction: column;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       }
+       .banner-description{
+        font-size: .8rem;
+        position: absolute;
+        top: 25%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+       }
+       .feature-img{
+    
+        width: 50%;
+        height: 50%;
+        
+    }
+    }
